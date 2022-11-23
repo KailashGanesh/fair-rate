@@ -1,0 +1,12 @@
+.footer{
+    background-color: $bg-footer;
+    color: #919eab;
+
+    &__gap{
+        gap: 30px;
+    }
+
+    .link{
+        color: $color-footer-links;
+    }
+}

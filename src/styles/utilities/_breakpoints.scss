@@ -1,0 +1,20 @@
+@mixin breakpoint($size) {
+    @if $size == 'tablet-above'{
+        @media only screen and (min-width: 1020px) {@content;}
+    } @else if $size == 'tablet-below'{
+        @media (max-width: 1020px) { @content; }
+    } @else if $size == 'phone-below'{
+        @media (max-width: 767px) { @content; }
+    }
+}
+
+.mobile-hide{
+    @include breakpoint('tablet-below'){
+        display: none !important;
+    }
+}
+.desktop-hide{
+    @include breakpoint('tablet-above'){
+        display: none !important;
+    }
+}

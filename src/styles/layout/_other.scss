@@ -1,0 +1,31 @@
+.hero{
+    // height: 100vh;
+    min-height: 568px;
+    background: url('/dist/img/hero-bg-2x.webp') no-repeat center center/cover;
+
+    &__content{
+        height: 100%;
+    }
+    &__heading{
+        max-width: 430px;
+    }
+    &__text{
+        max-width: 430px;
+    }
+
+}
+
+.perfect-rate{
+    min-height: 640px;
+    background: url('/dist/img/perfect-rate-2x.webp') no-repeat center center/cover;
+
+    .container{
+        min-height: 640px;
+    }
+
+    &__content{
+        max-width: 400px;
+    }
+}
+
+.need-help__content{max-width: 500px;}

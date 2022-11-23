@@ -23,8 +23,15 @@ a, a:visited, a:active{
 @include font-size('fs-md',14px,1.7);
 @include font-size('fs-sm',12px,normal);
 
+
 // font colors
-@include font-color('steel',$steel);
+@include font-color('heading-dark',$color-heading-dark);
+@include font-color('heading-light',$color-heading-light);
+
+@include font-color('content-dark',$color-content-dark);
+@include font-color('content-light',$color-content-light);
+
+@include font-color('highlight',$color-highlight);
 
 .fw-300{ font-weight: 300;}
 .fw-500{ font-weight: 500; }

@@ -4,14 +4,14 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-    min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    // overflow: hidden;
 }
 
 .container{
-    max-width: 1056px;
+    max-width: 1016px;
     padding-right:20px;
     padding-left:20px;
+    margin-right:auto;
+    margin-left:auto;
 }
