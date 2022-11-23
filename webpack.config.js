@@ -59,13 +59,12 @@ module.exports = {
             filename:path.join(__dirname, "index.html"),
             template: 'src/template.html',
             scriptLoading: 'blocking',
-            favicon:'dist/favicon.ico',
+            favicon:'src/favicon.ico',
             publicPath: 'dist/'
         }),
         new CopyPlugin({patterns:[
             {from: './src/assets/sprite.svg', to:''},
             {from: './src/assets/img', to:'./img'},
-            {from:'./src/favicon.ico', to:''},
             // {from:'./dist/index.html', to:'../index.html'},
         ]}),
         new MiniCssExtractPlugin(),
