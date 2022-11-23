@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+h1, h2, h3, .heading {
+    font-weight: 700;
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+}
+
+
+//heading
+@include font-size('heading-lg',44px,1.14);
+@include font-size('heading-md',32px,normal);
+@include font-size('heading-sm',24px,normal);
+
+//body
+@include font-size('fs-xlg',22px,normal);
+@include font-size('fs-lg',15px,normal);
+@include font-size('fs-md',14px,1.7);
+@include font-size('fs-sm',12px,normal);
+
+// font colors
+@include font-color('steel',$steel);
+
+.fw-300{ font-weight: 300;}
+.fw-500{ font-weight: 500; }

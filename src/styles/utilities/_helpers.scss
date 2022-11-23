@@ -1,0 +1,50 @@
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+// margin auto
+.mr-auto{ margin-right: auto;}
+.ml-auto{ margin-left: auto;}
+.m-auto{ margin-left: auto; margin-right: auto;}
+
+// text-align 
+.ta-l{text-align: left;}
+.ta-c{text-align: center;}
+.ta-r{text-align: right;}
+
+// vertical align
+.va-top{vertical-align: top;}
+.va-middle{vertical-align: middle;}
+
+.fs-reset{font-size: 0;}
+
+.wd-fc{width: fit-content;}
+
+// Uppercase letters
+
+.tt-uppercase{text-transform: uppercase;}
+.tt-capitalize{text-transform: capitalize;}
+
+// line heigh
+.lh-1{line-height: 1;}
+
+
+// border-radius
+.br-4{border-radius: 4px;}
+.br-6{border-radius: 6px;}
+
+// display
+
+.d-block{display: block;}
+.d-iblock{display: inline-block;}
+
+.d-flex{display: flex;}
+.flex-wrap{flex-wrap: wrap;}
+
+.flex-direction-col{flex-direction: column;}
+.jc-center{justify-content: center;}
+.jc-space-between{justify-content: space-between;}
+
+.ai-start{align-items: flex-start;}
+.ai-center{align-items: center;}
