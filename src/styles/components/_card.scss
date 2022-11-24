@@ -2,8 +2,35 @@
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    position: relative;
+
+    &:nth-child(2){
+        z-index: -1;
+    }
+    &:nth-child(3){
+        z-index: -2;
+    }
 
     &__content{
         max-width: 254px;
+    }
+
+    .card__icon{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -44px;
+        // z-index: 5;
+    }
+
+}
+
+
+
+.card-wrapper{
+    gap: 30px;
+
+    @include breakpoint('phone-below'){
+        justify-content: center;
     }
 }
