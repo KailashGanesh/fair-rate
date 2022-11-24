@@ -1,7 +1,7 @@
 /*!*********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
   \*********************************************************************************************************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss (1) ***!
   \*************************************************************************************************************************************************************/
@@ -2127,6 +2127,10 @@ a, a:visited, a:active {
   font-weight: 500;
 }
 
+.fw-700 {
+  font-weight: 500;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -2247,17 +2251,128 @@ body {
   background-color: #d4cfcf;
 }
 
+.card {
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+          box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}
+.card__content {
+  max-width: 254px;
+}
+
 .header {
   background-color: transparent;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  z-index: 3;
 }
 .header .container {
   border-bottom: 1px solid #c4cdd5;
 }
+.header .hamburger {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #2e2e2e;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+.header .hamburger:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+.header .hamburger:nth-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
 
+.header--sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.header--sticky .container {
+  border-bottom: none;
+}
+
+.mobile-nav {
+  -webkit-animation: animatezoom 0.6s forwards;
+          animation: animatezoom 0.6s forwards;
+  display: none;
+}
+.mobile-nav li {
+  margin-top: 5vh;
+}
+
+.mobile-nav--expand {
+  height: 70vh;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 20px 4px;
+          box-shadow: 0px 2px 20px 4px;
+  overflow-y: auto;
+}
+.mobile-nav--expand .hamburger {
+  opacity: 1;
+  -webkit-transform: rotate(40deg) translate(0px, -2px);
+          transform: rotate(40deg) translate(0px, -2px);
+  background: #232323;
+}
+.mobile-nav--expand .hamburger:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+.mobile-nav--expand .hamburger:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+.mobile-nav--expand .mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes animatezoom {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) translateY(-100%);
+            transform: scale(0) translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(10%);
+            transform: scale(1) translateY(10%);
+  }
+}
+
+@keyframes animatezoom {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) translateY(-100%);
+            transform: scale(0) translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(10%);
+            transform: scale(1) translateY(10%);
+  }
+}
 .footer {
   background-color: #f4f6f8;
   color: #919eab;

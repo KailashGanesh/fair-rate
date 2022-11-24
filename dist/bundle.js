@@ -62,6 +62,18 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 
+var header = document.getElementById("header");
+document.getElementById('hamburger').addEventListener('click', function () {
+  header.classList.toggle('mobile-nav--expand');
+});
+document.addEventListener('scroll', function (e) {
+  var lastKnownScrollPosition = window.scrollY;
+  if (lastKnownScrollPosition >= 100) {
+    header.classList.add('header--sticky');
+  } else if (lastKnownScrollPosition == 0) {
+    header.classList.remove('header--sticky');
+  }
+});
 }();
 /******/ })()
 ;
