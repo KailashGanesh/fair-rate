@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FairRate is a demo website that will help you find the best price for a service you are looking for">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container d-flex ai-center jc-space-between pt-5 pb-5 ">
             <div class="d-flex ai-center">
                 <div>
@@ -32,28 +34,69 @@
                 <li><a href="" class="link tt-uppercase ml-6">faq</a></li>
                 <li><a href="" class="tt-uppercase ml-6 btn btn-main btn-md">get started</a></li>
             </ul>
+            <a href="javascript:void(0)" class="desktop-hide pr-5" id="hamburger">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </a>
+        </div>
+
+        <div class="mobile-nav ai-center flex-direction-col ta-c">
+                <a href="tel:+622025550117" class="ml-4">
+                    <svg class="va-middle" width="14" height="14">
+                        <use href="dist/sprite.svg#icon-page-1"></use>
+                    </svg>
+                    <span class="va-middle link">+62 202 555 0117</span>
+                </a>
+
+            <ul class="">
+                <li><a href="javascript:void(0);" class="link tt-uppercase">Rates</a></li>
+                <li><a href="javascript:void(0);" class="link tt-uppercase">about us</a></li>
+                <li><a href="javascript:void(0);" class="link tt-uppercase">resources</a></li>
+                <li><a href="javascript:void(0);" class="link tt-uppercase">faq</a></li>
+                <li><a href="javascript:void(0);" class="tt-uppercase btn btn-main btn-md">get started</a></li>
+            </ul>
         </div>
     </header>
 
     <main>
         <section class="hero pt-41">
-            <article class="container d-flex  hero__content">
-                <article class="">
+            <div class="container d-flex  hero__content">
+                <article class="" data-aos="fade-right">
                     <p class="hero__heading heading-lg clr-heading-dark mb-5">Fair Rate lets you find the fairrest rate</p>
                     <p class="hero__text clr-content-dark mb-10 fs-md">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna.</p>
 
                     <p class="mb-3 clr-content-dark fs-sm">There are countless services with different rates %</p>
                     <a href="javscript:void(0);" class="btn btn-main btn-lg tt-uppercase">find the fair rate</a>
                 </article>
-            </article>
+            </div>
         </section>
 
-        <!-- <section>
-            <p class="underline">How FairRate works you ask?</p>
-        </section> -->
+        <section class="pt-29">
+            <div class="container">
+                <p class="underline heading-md clr-heading-dark ta-c mb-12">How FairRate works you ask?</p>
+                <div class="d-flex ai-center jc-space-between flex-wrap">
+                    <div class="card ta-c pt-10 pb-10 pl-5 pr-5" data-aos="fade-right">
+                        <img src="src/assets/svgs/home-1.svg" alt="man working" width="122" height="109" class="mb-3"></img>
+                        <p class="fs-lg clr-heading-dark mb-3 fw-700">APPLY WITH YOUR HOME</p>
+                        <p class="card__content fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card ta-c pt-10 pb-10 pl-5 pr-5" data-aos="fade-in">
+                        <img src="src/assets/svgs/home-2.svg" alt="man working" width="122" height="109" class="mb-3"></img>
+                        <p class="fs-lg clr-heading-dark mb-3 fw-700">Complete the form</p>
+                        <p class="card__content fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card ta-c pt-10 pb-10 pl-5 pr-5" data-aos="fade-left">
+                        <img src="src/assets/svgs/home-3.svg" alt="man working" width="122" height="109" class="mb-3"></img>
+                        <p class="fs-lg clr-heading-dark mb-3 fw-700">Complete the form</p>
+                        <p class="card__content fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="ta-c pt-21 pb-21">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <figure>
                     <blockquote class="heading-md clr-heading-dark mb-8">
                         “FairRate is beautiful, elegant and easy to apply. I’ve been able to apply for an amazing rate in just a minutes. Thank you very much for creating this impressive service!”
@@ -67,9 +110,9 @@
         </section>
 
         <section class="pt-15 perfect-rate">
-            <p class="m-auto ta-c clr-heading-light heading-md underline">Looking for the perfect rate for your home?</p>
+            <p class="m-auto ta-c clr-heading-light heading-md underline" data-aos="fade-in">Looking for the perfect rate for your home?</p>
             <div class="container d-flex ai-center jc-flex-end">
-                <div class="perfect-rate__content">
+                <div class="perfect-rate__content" data-aos="fade-left">
                     <p class="heading-sm clr-heading-light mb-4">Stop Looking</p>
                     <p class="fs-md clr-content-light mb-5">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna.</p>
 
@@ -91,7 +134,7 @@
         </section>
 
         <section class="pt-21 pb-20">
-            <div class="container ta-c">
+            <div class="container ta-c" data-aos="fade-down">
                 <svg class="" width="185" height="39">
                     <use href="dist/sprite.svg#icon-help-tube"></use>
                 </svg>
@@ -153,5 +196,9 @@
             <p class="fs-sm">© 2018 Deivas.io, Inc. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({disable: 'mobile'});
+    </script>
 </body>
 </html>
