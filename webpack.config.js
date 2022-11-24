@@ -59,7 +59,7 @@ module.exports = {
             filename:path.join(__dirname, "index.html"),
             template: 'src/template.html',
             scriptLoading: 'blocking',
-            favicon:'src/favicon.ico',
+            favicon:'src/favicon.png',
             publicPath: 'dist/'
         }),
         new CopyPlugin({patterns:[
