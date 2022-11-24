@@ -2163,7 +2163,7 @@ body {
   font-weight: 500;
 }
 .btn-main:hover {
-  background-color: #0c29e6;
+  background-color: #24aad8;
 }
 .btn-lg {
   padding: 21px 37px;
@@ -2175,80 +2175,14 @@ body {
   background-color: white;
   color: #4ad5f6;
   font-weight: 500;
+  -webkit-transition: -webkit-transform 150ms ease-in;
+  transition: -webkit-transform 150ms ease-in;
+  transition: transform 150ms ease-in;
+  transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
 }
 .btn-white:hover {
-  background-color: #0c29e6;
-}
-
-.btn-group--round {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border: 1px solid #8e8e93;
-  border-radius: 17px;
-  height: 34px;
-}
-.btn-group--round .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: white;
-  border: 1px solid #ededed;
-  padding: 5px;
-}
-.btn-group--round .btn:hover {
-  background-color: #ededed;
-  background-color: #007aff;
-  border: 1px solid #007aff;
-}
-.btn-group--round .btn:hover .btn__icon {
-  fill: white;
-}
-.btn-group--round .btn__icon {
-  fill: #8e8e93;
-}
-.btn-group--round .btn:first-child {
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
-  padding-left: 8px;
-}
-.btn-group--round .btn:last-child {
-  border-top-right-radius: 17px;
-  border-bottom-right-radius: 17px;
-  padding-right: 8px;
-}
-
-.btn-group--sqr {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #f9f9f9;
-}
-.btn-group--sqr .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 110px;
-  width: 100%;
-  height: 60px;
-}
-.btn-group--sqr .btn:not(:last-child) {
-  border-right: 1px solid #e6e4e4;
-}
-.btn-group--sqr .btn:hover {
-  background-color: #d4cfcf;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .card {
@@ -2256,9 +2190,34 @@ body {
   border-radius: 3px;
   -webkit-box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
           box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+  position: relative;
+}
+.card:nth-child(2) {
+  z-index: -1;
+}
+.card:nth-child(3) {
+  z-index: -2;
 }
 .card__content {
   max-width: 254px;
+}
+.card .card__icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -44px;
+}
+
+.card-wrapper {
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .card-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .header {
