@@ -1,4 +1,6 @@
+import '@splidejs/splide/css';
 import './styles/main.scss'
+import Splide from '@splidejs/splide';
 
 
 const header = document.getElementById("header");
@@ -21,5 +23,23 @@ document.addEventListener('scroll', (e) => {
 
 
 document.getElementById('cta').addEventListener('click', ()=>{
-    
+
 })
+
+let splide = document.getElementById('splide');
+
+new Splide(splide, {
+    // clones  : 0,
+    type: 'loop',
+    fixedWidth: '200px',
+    fixedHeight: '200px',
+    gap: '40px',
+    perPage: 1,
+    focus: 'center',
+    arrows: true,
+    autowidth: false,
+    waitForTransition: false,
+    // updateOnMove: true,
+    snap: true,
+    breakpoints: { 470: { fixedWidth: '90%' } }
+}).mount();
