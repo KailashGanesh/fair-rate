@@ -1,10 +1,6 @@
 /*!*********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
   \*********************************************************************************************************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);
-/*!*************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss (1) ***!
-  \*************************************************************************************************************************************************************/
 .mr-1 {
   margin-right: 4px;
 }
@@ -2116,7 +2112,7 @@ a, a:visited, a:active {
 }
 
 .clr-highlight {
-  color: #4ad5f6;
+  color: #2c7f93;
 }
 
 .fw-300 {
@@ -2173,7 +2169,7 @@ body {
 }
 .btn-white {
   background-color: white;
-  color: #4ad5f6;
+  color: #2c7f93;
   font-weight: 500;
   -webkit-transition: -webkit-transform 150ms ease-in;
   transition: -webkit-transform 150ms ease-in;
@@ -2345,7 +2341,7 @@ body {
 
 .hero {
   min-height: 568px;
-  background: url(hero-bg-2x.webp) no-repeat center center/cover;
+  background: url(hero-bg-1x.webp) no-repeat center center/cover;
 }
 .hero__content {
   height: 100%;
@@ -2359,7 +2355,7 @@ body {
 
 .perfect-rate {
   min-height: 640px;
-  background: url(perfect-rate-2x.webp) no-repeat center center/cover;
+  background: url(perfect-rate-1x.webp) no-repeat center center/cover;
 }
 .perfect-rate .container {
   min-height: 640px;
