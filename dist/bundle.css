@@ -2372,6 +2372,16 @@ body {
   max-width: 500px;
 }
 
+.splide__slide {
+  background-color: rgba(35, 192, 245, 0.1);
+  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+  margin-block: 10px;
+}
+.splide__arrow {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;

@@ -18,3 +18,8 @@ document.addEventListener('scroll', (e) => {
         header.classList.remove('header--sticky');
     }
 })
+
+
+document.getElementById('cta').addEventListener('click', ()=>{
+    
+})
