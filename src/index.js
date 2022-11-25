@@ -1,8 +1,11 @@
+import 'aos/dist/aos.css';
 import '@splidejs/splide/css';
 import './styles/main.scss'
+import AOS from 'aos';
 import Splide from '@splidejs/splide';
 
 
+AOS.init();
 const header = document.getElementById("header");
 
 document.getElementById('hamburger').addEventListener('click', () => {
