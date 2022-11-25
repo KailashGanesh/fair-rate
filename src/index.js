@@ -5,7 +5,8 @@ import AOS from 'aos';
 import Splide from '@splidejs/splide';
 
 
-AOS.init();
+AOS.init({disable: 'mobile'});
+
 const header = document.getElementById("header");
 
 document.getElementById('hamburger').addEventListener('click', () => {

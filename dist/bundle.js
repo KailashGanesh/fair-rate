@@ -3903,7 +3903,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-aos__WEBPACK_IMPORTED_MODULE_3___default().init();
+aos__WEBPACK_IMPORTED_MODULE_3___default().init({
+  disable: 'mobile'
+});
 var header = document.getElementById("header");
 document.getElementById('hamburger').addEventListener('click', function () {
   header.classList.toggle('mobile-nav--expand');
