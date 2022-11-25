@@ -18,6 +18,7 @@
 
                 <a href="javascript:void(0);">
                     <svg class="" width="185" height="39">
+                        <title>logo of fair rate</title>
                         <use href="dist/sprite.svg#icon-logo"></use>
                     </svg>
                 </a>
@@ -109,6 +110,16 @@
                                 </figcaption>
                             </figure>
                         </li>
+                        <li class="splide__slide d-flex ai-center jc-space-between p-4">
+                            <figure>
+                                <blockquote class="fs-lg clr-heading-dark mb-8">
+                                    "I got my best rate for my house at fair rates!"
+                                </blockquote>
+                                <figcaption class="fs-sm clr-content-dark ta-r">
+                                    James Bond
+                                </figcaption>
+                            </figure>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +130,7 @@
                 <p class="underline heading-md clr-heading-dark ta-c mb-12">How FairRate works you ask?</p>
                 <div class="d-flex ai-center flex-wrap card-wrapper">
                     <div class="card ta-c pt-10 pb-10 pl-5 pr-5" data-aos="fade-right">
-                        <img src="src/assets/svgs/home-1.svg" alt="man working" width="122" height="109" class="mb-3"></img>
+                        <img src="src/assets/svgs/home-1.svg" alt="illustration of a house" width="122" height="109" class="mb-3"></img>
                         <p class="fs-lg clr-heading-dark mb-3 fw-700">APPLY WITH YOUR HOME</p>
                         <p class="card__content fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
@@ -128,7 +139,7 @@
                             </svg>
                     </div>
                     <div class="card ta-c pt-10 pb-10 pl-5 pr-5" data-aos="fade-in">
-                        <img src="src/assets/svgs/home-2.svg" alt="man working" width="122" height="109" class="mb-3"></img>
+                        <img src="src/assets/svgs/home-2.svg" alt="illustration of a man working" width="122" height="109" class="mb-3"></img>
                         <p class="fs-lg clr-heading-dark mb-3 fw-700">Complete the form</p>
                         <p class="card__content fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <svg class="card__icon mobile-hide" width="51" height="51">
@@ -136,7 +147,7 @@
                         </svg>
                     </div>
                     <div class="card ta-c pt-10 pb-10 pl-5 pr-5" data-aos="fade-left">
-                        <img src="src/assets/svgs/home-3.svg" alt="man working" width="122" height="109" class="mb-3"></img>
+                        <img src="src/assets/svgs/home-3.svg" alt="illustration of filling up a form" width="122" height="109" class="mb-3"></img>
                         <p class="fs-lg clr-heading-dark mb-3 fw-700">Complete the form</p>
                         <p class="card__content fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -265,13 +276,13 @@
         fixedHeight: '200px',
         gap: '40px',
         perPage: 1,
-        // focus  : 'center',
+        focus  : 'center',
         arrows: true,
         autowidth: false,
         waitForTransition: false,
         // updateOnMove: true,
         snap: true,
-        breakpoints: { 470: { fixedWidth: '90%', fixedHeight: '400px', } }
+        breakpoints: { 470: { fixedWidth: '90%'} }
     }).mount();
     </script>
 </body>

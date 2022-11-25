@@ -2381,6 +2381,11 @@ body {
 .splide__arrow {
   background-color: rgba(0, 0, 0, 0.1);
 }
+.splide .splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
 
 .img-fluid {
   max-width: 100%;
