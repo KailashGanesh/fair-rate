@@ -5,9 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require("copy-webpack-plugin")
 const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 
 module.exports = {
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserPlugin()],
+    },
     mode:'development',
     entry: {
         bundle: path.resolve(__dirname, 'src/index.js')
