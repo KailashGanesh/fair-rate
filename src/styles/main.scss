@@ -1,7 +1,5 @@
 @charset 'utf-8';
 
-// font
-// @import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap';
 
 // utilities
 @import 'utilities/variables';
@@ -23,3 +21,6 @@
 @import 'layout/other';
 
 @import 'utilities/helpers';
+
+// font
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap';
