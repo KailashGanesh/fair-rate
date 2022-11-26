@@ -6,12 +6,27 @@ const CopyPlugin = require("copy-webpack-plugin")
 const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const glob = require("glob");
+const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
 
+const PATHS = {
+    src: path.join(__dirname, "src"),
+};
 
 module.exports = {
     optimization: {
         minimize: true,
         minimizer: [new TerserPlugin()],
+        splitChunks: {
+            cacheGroups: {
+              styles: {
+                name: "styles",
+                test: /\.css$/,
+                chunks: "all",
+                enforce: true,
+              },
+            },
+        },
     },
     mode:'development',
     entry: {
@@ -77,6 +92,9 @@ module.exports = {
             // {from:'./dist/index.html', to:'../index.html'},
         ]}),
         new MiniCssExtractPlugin(),
+        new PurgeCSSPlugin({
+            paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+          }),
         new ImageminWebpWebpackPlugin({
             config: [{
               test: /\.(jpe?g|png)/,
