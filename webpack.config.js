@@ -82,7 +82,8 @@ module.exports = {
             // filename:'index.html',
             filename:path.join(__dirname, "index.html"),
             template: 'src/template.html',
-            scriptLoading: 'blocking',
+            scriptLoading: 'defer',
+            inject:false,
             favicon:'src/favicon.png',
             publicPath: 'dist/'
         }),
