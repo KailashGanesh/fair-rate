@@ -12,7 +12,7 @@
 }
 
 @mixin spacing($number) {
-    @for $i from 1 through 50{
+    @for $i from 1 through 30{
         .mr-#{$i} {
             margin-right: #{$i * $number}px;
         }

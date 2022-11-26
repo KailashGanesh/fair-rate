@@ -92,9 +92,9 @@ module.exports = {
             // {from:'./dist/index.html', to:'../index.html'},
         ]}),
         new MiniCssExtractPlugin(),
-        new PurgeCSSPlugin({
-            paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-          }),
+        // new PurgeCSSPlugin({
+        //     paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+        //   }),
         new ImageminWebpWebpackPlugin({
             config: [{
               test: /\.(jpe?g|png)/,
