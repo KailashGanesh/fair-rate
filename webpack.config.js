@@ -20,7 +20,7 @@ module.exports = {
         splitChunks: {
             cacheGroups: {
               styles: {
-                name: "styles",
+                name: "plugin",
                 test: /\.css$/,
                 chunks: "all",
                 enforce: true,
@@ -52,12 +52,12 @@ module.exports = {
     module: {
         rules:[
             {
-                test: /\.css$/,
-                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
-            },
-            {
                 test:/\.scss$/,
                 use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader','sass-loader'],
+            },
+            {
+                test: /\.css$/,
+                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
             },
             {
                 test:/\.js$/,
