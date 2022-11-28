@@ -14,8 +14,6 @@ document.getElementById('hamburger').addEventListener('click', () => {
 })
 
 
-
-
 document.addEventListener('scroll', (e) => {
     let lastKnownScrollPosition = window.scrollY;
     if (lastKnownScrollPosition >= 100){
@@ -23,11 +21,6 @@ document.addEventListener('scroll', (e) => {
     }else if(lastKnownScrollPosition == 0){
         header.classList.remove('header--sticky');
     }
-})
-
-
-document.getElementById('cta').addEventListener('click', ()=>{
-
 })
 
 let splide = document.getElementById('splide');
